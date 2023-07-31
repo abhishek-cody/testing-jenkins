@@ -3,7 +3,7 @@ def call (String name , String number){
 }
 
 
-def call (String name){
-    echo " my name is ${name}"
+def name(String name ){
+    echo "hello ${name}"
 }
 
