@@ -7,7 +7,3 @@ def name(String name ){
     echo "hello ${name}"
 }
 
-def name(String name , String number, String address){
-    echo "hello ${name} , ${number} ${address}"
-}
-
