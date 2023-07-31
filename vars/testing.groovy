@@ -9,7 +9,10 @@ def call(String name, String number, String address){
     stages {
         stage('Hello') {
             steps {
-               object.name(name, number, address)
+                script{
+            object.name(name, number, address)
+                }
+              
             }
         }
     }
