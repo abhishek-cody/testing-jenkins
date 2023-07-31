@@ -1,9 +1,20 @@
-def call (String name , String number){
-    echo " my name is ${name}, phone number ${number}"
+import com.tothenew.Utility
+
+def call(String name, String number, String address){
+   object = new Utility() 
+
+   pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+               object.name(name, number, address)
+            }
+        }
+    }
 }
 
+ 
 
-def name(String name ){
-    echo "hello ${name}"
 }
-
